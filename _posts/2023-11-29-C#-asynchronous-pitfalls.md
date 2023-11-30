@@ -1,5 +1,5 @@
-# A word of warning when working with asynchronous code.
-## The Issue
+## A word of warning when working with asynchronous code.
+### The Issue
 
 - Arose during testing of hundreds of asset creations at once meaning lots of repository method calls.
 - During debugging the code would break immediately after an exception was thrown in the repository layer method.
@@ -54,7 +54,7 @@ public async Task<Asset> CreateAssetAsync(Asset asset)
 }
 ```
 
-## The Resolution
+### The Resolution
 
 Luckily, a collegue spotted I had fallen into the `async void` pitfall and noticed I was making a synchronous call to an asynchronous
 method.
@@ -88,7 +88,7 @@ private async Task FinaliseAssetCreation(asset...)
 }
 ```
 
-## The Conclusion
+### The Conclusion
 
 The repository was throwing an exception, but since the method calling it was running syncronously it had already exited. Hence, the error message stating the exception was being unhandled even though there was a try catch around the method call.
 
@@ -106,7 +106,7 @@ After reading some Microsoft [documentation](https://learn.microsoft.com/en-us/a
 
 On the whole, I believe `async` code is great when it's done right. It allows multiple tasks to execute concurrently and it can greatly speed up execution if you have these tasks running in parallel without blocking threads. Although, there are some very easy pitfalls and it's good to keep them in mind to ensure your code is thread safe and actually running asynchronously.
 
-### What did ChatGPT think?
+#### What did ChatGPT think?
 
 Here is ChatGPT's response to my prompt asking if the `async void` method above was good code:
 
