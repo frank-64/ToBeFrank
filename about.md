@@ -6,7 +6,7 @@ permalink: /about/
 
 Hi, I'm Frankie!
 
-Welcome to my blog, this is a place for me to share recent project, words of warning, useful tech tools and other exciting things.
+Welcome to my blog, this is a place for me to share recent projects, words of warning, useful tech tools and other exciting things.
 
 This blog aims to record any interesting discoveries throughout my career as a Software Developer through work and personal projects.
 
