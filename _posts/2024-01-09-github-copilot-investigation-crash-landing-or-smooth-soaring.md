@@ -21,37 +21,37 @@ The three features I found most useful from GitHub Copilot during my investigati
 
 This completion was appreciated as my next step would have been including the login step. The completion saved me time and managed to include the valid connection variable name from the context of the current file.
 
-![Pipeline code completion 1](/assets/images/code%20completion%20pipelines%201.png)
+![Pipeline code completion 1](assets/images/code%20completion%20pipelines%201.png)
 
 #### 2. App settings definition assisted with code completion
  In this example I was manually defining my app's settings in a pipeline and it managed to perfectly suggest the next three settings which I was about to type. It used the context from the first variable `DOCKER_REGISTRY_SERVER_PASSWORD` to determine the next settings required and then matched my variable format. This is a great example of the time saving benefit of GitHub Copilot as the manual process is very specific and time consuming.
 
-![App settings code completion 1](/assets/images/app%20settings%202.png)
+![App settings code completion 1](assets/images/app%20settings%202.png)
 ### Code Suggestions
 
 #### 1. App settings code suggestion from prompt
 This example is very similar to the one above, however, I prompted Copilot with the list of known app settings names. It then added them to the existing list of app settings and matched the correct format e.g. `APP_SETTING_1` = `-APP_SETTING_1 $(APP_SETTING_1)`. This saved me a great deal of time typing out each specific app setting.
-![App settings code completion 2](/assets/images/app%20settings%201.png)
+![App settings code completion 2](assets/images/app%20settings%201.png)
 
 #### 2. Accurate code suggestion from a very simple prompt
 Here I was trying to define an Azure Pipielines stage with multiple dependencies. The previous build failed stating an error in this line. I simply prompted Copilot with `depends on multiple` and it quickly suggested a re-format which resulted in a successful pipeline run.
 
-![Pipeline code suggestion depends on](/assets/images/depends%20on%20multiple.png)
+![Pipeline code suggestion depends on](assets/images/depends%20on%20multiple.png)
 
 ### Code Explanation
 #### 1. Explanation of an code in an unfamiliar code base and language
 This example shows an inline chat I started to determine if a message could still be added to an array if it was a constant or `const` definition. The code-base was not written by me and this was the first time viewing it. I am not a TypeScript pro so the idea of a constant being updated surprised me. Thankfully, Copilot provided me a clear explanation in to why the code works fine. 
-![Constant explain](/assets//images/constant%20explain.png)
+![Constant explain](assets//images/constant%20explain.png)
 
 #### 2. 
-![Pipelines explain](/assets/images/pipelines%20explain.png)
+![Pipelines explain](assets/images/pipelines%20explain.png)
 
 ### Chat GPT vs GitHub Copilot
 I decided to compare ChatGPT and GitHub Copilot by asking the same question: How do I set the admin user property on an Azure Container Registry in a Bicep template? I provided ChatGPT the existing resource definition for context. As you can see below, ChatGPT was completely off as it was attempting to use Role-based access control assignments, but Copilot suggested the correct addition and saved me some time researching.
 
-![GPT Code suggestions](/assets/images/admin%20user%20chatgpt.png)
+![GPT Code suggestions](assets/images/admin%20user%20chatgpt.png)
 
-![Copilot Code suggestions](/assets/images/admin%20user%20copilot.png)
+![Copilot Code suggestions](assets/images/admin%20user%20copilot.png)
 
 ## Security Concerns
 Research and reference privacy policies 
@@ -66,10 +66,10 @@ As mentioned earlier, the investigation was conducted in Visual Studio Code, pri
 These were a few of the drawbacks I discovered while using Visual Studio as opposed to Visual Studio code. It appears the community agrees, judging by the disparity in reviews and downloads for VS and VS Code.
 
 ### Visual Studio GitHub Copilot Extension
-![Visual Studio Bad Reviews](/assets/images/vs-bad-reviews.png)
+![Visual Studio Bad Reviews](assets/images/vs-bad-reviews.png)
 
 ### Visual Studio Code GitHub Copilot Extension
-![Visual Studio Code Good Reviews](/assets/images/vs-code-good-reviews.png)
+![Visual Studio Code Good Reviews](assets/images/vs-code-good-reviews.png)
 
 Pitch to my company why we should/shouldn't use it
 
