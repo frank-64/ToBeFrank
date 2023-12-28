@@ -1,4 +1,4 @@
-## Crash landing or a soaring success? This article determines the potential benefits of using GitHub's AI pair programmer tool Copilot.
+## Crash landing or a soaring success? This article determines the potential benefits of using GitHub's AI pair programming tool, Copilot.
 ## Introduction
 In my last blog, I spoke about not knowing the capability of GitHub Copilot. I decided to change by signing up for the 30-day free trial and I began my investigation. I set out to determine the effectiveness, accuracy and security of GitHub Copilot as a tool for programmers. The end goal being a consideration of whether the costs involved are justified.
 
