@@ -1,19 +1,19 @@
 ## Crash landing or a soaring success? This article determines the potential benefits of using GitHub's AI pair programming tool, Copilot.
 ## Introduction
-In my last blog, I spoke about not knowing the capability of GitHub Copilot. I decided to change by signing up for the 30-day free trial and I began my investigation. I set out to determine the effectiveness, accuracy and security of GitHub Copilot as a tool for programmers. The end goal being a consideration of whether the costs involved are justified.
+In my last blog, I spoke about not knowing the capability of GitHub Copilot. I decided to change this by signing up for the 30-day free trial and I began my investigation. I set out to determine the effectiveness, accuracy and security of GitHub Copilot as a tool for programmers. The end goal being a consideration of whether the monthly subscription costs involved are justified.
 
-For context, GitHub Copilot is an AI powered assistant specifically trained to assist with programming. It can be installed as an extension in your programming environment (IDE) of choice to give code completions, code explanations or 
-offer code fixes. This investigations primarily used the Visual Studio Code IDE for reasons explained later.
+For context, GitHub Copilot is an AI powered assistant specifically trained to assist with programming. It can be installed as an extension in your programming environment (IDE) of choice to give code completions, explanations or 
+suggest fixes. This investigation primarily used the Visual Studio Code IDE for reasons explained later.
 
-## First Impressions
+<!-- ## First Impressions
 /fix is good
 highlight to select specific context
 Inline makes it so much easier
 Ctrl+I
-/explain good for getting to grips with new codebases
+/explain good for getting to grips with new codebases -->
 
 ## Examples
-The three features I found most useful from GitHub Copilot during my investigation were code completions, suggestions and explanations. Below I will provide some examples, which I believe, detail the necessicity for Copilot as a tool for programmers.
+The three features I found most useful from GitHub Copilot during my investigation were code completions, suggestions and explanations. Below I will provide some examples, which I believe, detail the necessity for Copilot as a tool for programmers.
 
 ### Code Completion
 
@@ -40,14 +40,15 @@ Here I was trying to define an Azure Pipielines stage with multiple dependencies
 
 ### Code Explanation
 #### 1. Explanation of an code in an unfamiliar code base and language
-This example shows an inline chat I started to determine if a message could still be added to an array if it was a constant or `const` definition. The code-base was not written by me and this was the first time viewing it. I am not a TypeScript pro so the idea of a constant being updated surprised me. Thankfully, Copilot provided me a clear explanation in to why the code works fine. 
+This example shows an inline chat I started to determine if a message could still be added to an array if it was a constant or `const` definition. The code-base was not written by me and this was the first time viewing it. I am not a TypeScript pro so the idea of a constant being updated surprised me. Thankfully, Copilot provided me a clear explanation as to why the code works fine. 
 ![Constant explain](https://raw.githubusercontent.com/frank-64/ToBeFrank/master/assets/images/constant%20explain.png)
 
-#### 2. 
+#### 2. Explanation of unfamiliar line in a YAML pipeline file
+During an update to some pipelines I was curious why the documentation stated a `.` at the end of the build command. I  highlighted line `58` and started a chat with Copilot to determine why this was needed. Copilot used the context of the code and it's understanding of Docker to provide a clear and concise explanation as to why the `.` was needed at the end.
 ![Pipelines explain](https://raw.githubusercontent.com/frank-64/ToBeFrank/master/assets/images/pipelines%20explain.png)
 
 ### Chat GPT vs GitHub Copilot
-I decided to compare ChatGPT and GitHub Copilot by asking the same question: How do I set the admin user property on an Azure Container Registry in a Bicep template? I provided ChatGPT the existing resource definition for context. As you can see below, ChatGPT was completely off as it was attempting to use Role-based access control assignments, but Copilot suggested the correct addition and saved me some time researching.
+I decided to compare ChatGPT and GitHub Copilot by asking the same question: How do I set the admin user property on an Azure Container Registry in a Bicep template? I provided ChatGPT the existing resource definition for context. In the images below ChatGPT was completely off from the documented approach by [Microsoft](https://learn.microsoft.com/en-us/azure/templates/microsoft.containerregistry/registries?pivots=deployment-language-bicep#:~:text=properties%3A%20%7B%0A%20%20%20%20adminUserEnabled%3A%20bool). It was attempting to use Role-based access control assignments, but Copilot suggested the correct addition and saved me some time researching.
 
 ![GPT Code suggestions](https://raw.githubusercontent.com/frank-64/ToBeFrank/aec2ec3606ee8a792e441795b38f41acda986559/assets/images/admin%20user%20chatgpt.png)
 
