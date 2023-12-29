@@ -54,7 +54,26 @@ I decided to compare ChatGPT and GitHub Copilot by asking the same question: How
 ![Copilot Code suggestions](https://raw.githubusercontent.com/frank-64/ToBeFrank/master/assets/images/admin%20user%20copilot.png)
 
 ## Security Concerns
-Research and reference privacy policies 
+
+There's the obvious elephant in the room when we talk about AI and that is our data. When working with senstive information or intellectual property it's a very valid concern to have considering Copilot uses the source code to generate completions and suggestions. 
+
+GitHub Copilot is being used in dev teams by huge enterprise companies from sectors such as banking, distribution, e-commerce and aviation. These companies obviously have done their due diligence when it comes to security concerns and are satisfied with the level of security implemented for Copilot. For most companies, neglecting security and privacy is a deal breaker, so it seems this has been prioritised by GitHub during Copilot's development.
+
+Here are just some measures GitHub take to ensure privacy and security:
+
+1. Azure infrastructure is used throughout to ensure encryption in transit and at rest.
+2. Prompts are not stored as they are discarded once a suggestion is returned.
+4. Code used as context is destroyed in memory once a suggestion is returned.
+3. Prompts, code and other context is not used for training models.
+4. Prompt content is not logged or exposed via an API.
+
+You can read more on this here: [GitHub docs](https://resources.github.com/copilot-trust-center/)
+
+### Copilot for Business
+It is **crucial** that I mention the features above are exclusive to the Copilot Business plan and Enterprise plan (coming Feb 2024). As far as I'm aware this means that the free trial or Copilot Individual plan *may* train it's model using your code-base and store prompts. GitHub claim that code stored in public GitHub repositories is currently used to train the model as mentioned [here](https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-individual#:~:text=GitHub%20Copilot%20is%20powered,data%20for%20that%20language.). So, for work on client projects the business plan at $19 per user/per month would be satisfactory to ensure code security.
+
+![GitHub Copilot Pricing](https://raw.githubusercontent.com/frank-64/ToBeFrank/master/assets/images/github-copilot-pricing.png)
+
 ## Conclusions
 
 As mentioned earlier, the investigation was conducted in Visual Studio Code, primarily. However, I did conduct some testing on the same code in Visual Studio Professional 2022 in order to perform some comparisons. Here are my discoveries:
@@ -70,8 +89,6 @@ These were a few of the drawbacks I discovered while using Visual Studio as oppo
 
 ### Visual Studio Code GitHub Copilot Extension
 ![Visual Studio Code Good Reviews](https://raw.githubusercontent.com/frank-64/ToBeFrank/master/assets/images/vs-code-good-reviews.png)
-
-Pitch to my company why we should/shouldn't use it
 
 In my eyes, I do not see AI as a threat to the jobs of Software Engineers. It's purely a tool that, when used correctly, can increase the efficiency of certain day-to-day tasks. There are many stages of the Software Development lifecycle which simply cannot be completed by an AI (at the moment) and the main ones are centred on determining what the client/product owner wants then subsequently prioritising and breaking down these requirements. You could say that AI is a headless chicken that regenerates its head upon proper direction and relevant context from the prompter.
 
