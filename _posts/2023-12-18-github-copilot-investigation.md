@@ -1,16 +1,18 @@
-## Crash landing or a soaring success? This article determines the potential benefits of using GitHub's AI pair programming tool, Copilot.
+## Crash landing or a soaring success? This article determines the benefits of using GitHub's AI pair programming tool, Copilot.
 ## Introduction
 In my last blog, I spoke about not knowing the capability of GitHub Copilot. I decided to change this by signing up for the 30-day free trial and I began my investigation. I set out to determine the effectiveness, accuracy and security of GitHub Copilot as a tool for programmers. The end goal being a consideration of whether the monthly subscription costs involved are justified.
 
 For context, GitHub Copilot is an AI powered assistant specifically trained to assist with programming. It can be installed as an extension in your programming environment (IDE) of choice to give code completions, explanations or 
 suggest fixes. This investigation primarily used the Visual Studio Code IDE for reasons explained later.
 
-<!-- ## First Impressions
-/fix is good
-highlight to select specific context
-Inline makes it so much easier
-Ctrl+I
-/explain good for getting to grips with new codebases -->
+## First Impressions
+Inline chat was the most useful way I found to interact with Copilot. It's triggered by hitting `Ctrl` + `I` with a file open or with a segment of code selected.
+
+Copilot has a `/explain` feature that will use the context of the highlighted code and the user's prompt to succinctly detail a section of code. This could be particularly beneficial for junior programmers or anyone attempting to get to grips with a new code base in order to actually understand the code. Furthermore, programmers working with code not written in their primary language could make use of this feature to improve their confidence and help with the syntactical nuances. 
+
+There is also a `/doc` feature that can be used to to document or add comments to old/unsupported code. I could see this being particularly useful for those who forget or do not enjoy documentation.
+
+These features would also benefit senior programmers as there would be more support for juniors. This would result in less time spent on calls explaining code, debugging a missing semi-colon or resolving other syntactic errors. The code quality should still remain relatively high as Copilot is aware of the code-base as context so it makes attempts to follow coding standards set when making suggestions.
 
 ## Examples
 The three features I found most useful from GitHub Copilot during my investigation were code completions, suggestions and explanations. Below I will provide some examples, which I believe, detail the necessity for Copilot as a tool for programmers.
@@ -60,7 +62,9 @@ There's the obvious elephant in the room when we talk about AI and that is our d
 
 GitHub Copilot is being used in dev teams by huge enterprise companies from sectors such as banking, distribution, e-commerce and aviation. These companies obviously have done their due diligence when it comes to security concerns and are satisfied with the level of security implemented for Copilot. For most companies, neglecting security and privacy is a deal breaker, so it seems this has been prioritised by GitHub during Copilot's development.
 
-Here are just some measures GitHub take to ensure privacy and security:
+There are also concerns around secrets being leaked and displayed in some Copilot suggestions. The reason some suggestions contained secrets is because Copilot is trained from *public* GitHub repositories. If these secrets are contained in these public repositories then anyone can see them regardless. This should only be a concern if you are using hard-coded secrets, which is far from best practice, anyway. You should be using environmental variables or ideally managed credentials in something like Azure Key Vault.
+
+Here are just some measures GitHub are taking to ensure privacy and security:
 
 1. Azure infrastructure is used throughout to ensure encryption in transit and at rest.
 2. Prompts are not stored as they are discarded once a suggestion is returned.
@@ -79,11 +83,11 @@ It is **crucial** that I mention the features above are exclusive to the Copilot
 
 As mentioned earlier, the investigation was conducted in Visual Studio Code, primarily. However, I did conduct some testing on the same code in Visual Studio Professional 2022 in order to perform some comparisons. Here are my discoveries:
 
-1. I encountered fewer code completions and they were less accurate than Visual Studio Code and in some cases the standard Visual Studio code completions.
+1. I encountered fewer code completions and they were less accurate than Visual Studio Code and in some cases the standard Visual Studio IntelliCode completions.
 2. The suggestions are not *inline* as they are shown in a separate GitHub Copilot tab instead of overlaying on the class/file window that is being worked on. As seen in the examples above, you can open GitHub Copilot directly inline when using Visual Studio Code or highlight the lines to use, narrowing the context.
 3. Visual Studio Code has a dedicated Chat window to discuss more generic questions which is useful at the inception of a project to help get started.
 
-These were a few of the drawbacks I discovered while using Visual Studio as opposed to Visual Studio code. It appears the community agrees, judging by the disparity in reviews and downloads for VS and VS Code.
+These were a few of the drawbacks I discovered while using Visual Studio as opposed to Visual Studio code. It appears the community agrees, judging by the disparity in rating and downloads for VS and VS Code.
 
 ### Visual Studio GitHub Copilot Extension
 ![Visual Studio Bad Reviews](https://raw.githubusercontent.com/frank-64/ToBeFrank/master/assets/images/vs-bad-reviews.png)
@@ -91,15 +95,28 @@ These were a few of the drawbacks I discovered while using Visual Studio as oppo
 ### Visual Studio Code GitHub Copilot Extension
 ![Visual Studio Code Good Reviews](https://raw.githubusercontent.com/frank-64/ToBeFrank/master/assets/images/vs-code-good-reviews.png)
 
-In my eyes, I do not see AI as a threat to the jobs of Software Engineers. It's purely a tool that, when used correctly, can increase the efficiency of certain day-to-day tasks. There are many stages of the Software Development lifecycle which simply cannot be completed by an AI (at the moment) and the main ones are centred on determining what the client/product owner wants then subsequently prioritising and breaking down these requirements. You could say that AI is a headless chicken that regenerates its head upon proper direction and relevant context from the prompter.
+I found Copilot particularly useful when writing YAML for pipelines and Infrastructure-as-Code, the steps for building and deploying applications are very specific to the project at hand. Boilerplate code is often used from documentation or other projects that can be adapted to work with the project and reference the appropriate variables. This is very time-consuming process and it is prone to mistakes. On top of that, a pipeline run for a small project in Azure DevOps or GitHub Actions can take a few minutes to output a success/failure. The code completions and suggestions, shown in the examples above, were amazing for this as they recommended accurate additions using the context of the file and quickly helped me to resolve issues causing pipeline failures. I believe this resulted in significant time saved finding documentation or example projects.
 
-Copilot has a `/explain` feature that will use the context of the highlighted code and the user's prompt to succinctly detail a section of code. This could be particularly beneficial for junior programmers or anyone attempting to get to grips with a new code base in order to actually understand the code. Furthermore, programmers working with code not written in their primary language could make use of this feature to improve their confidence and help with the syntactical nuances. 
+During this trial, I was able to test most of the features, however, GitHub released more features and improvements while I was writing this article.
+I highly recommend this [video](https://youtu.be/a2DDYMEPwbE?si=B-UY9uMTji0My3wd) as it demonstrates some of the features I described above and introduces the new changes such as the use of multi-models, codebase referencing and inline chat improvements.
 
-There is also a `/doc` feature that can be used to to document or add comments to old/unsupported code.
+In my eyes, I do not see AI as a threat to the jobs of Software Engineers. It's purely a tool that, when used correctly, can increase the efficiency of certain day-to-day tasks. There are many stages of the Software Development lifecycle which simply cannot be completed by an AI (at the moment) and I think the main one is centred on determining what the client/product owner wants then subsequently prioritising and breaking down these requirements. You could say that AI is a headless chicken that regains its head upon proper direction and relevant context from the prompter.
 
-These features would benefit senior programmers as there would be more support for juniors. This would result in less time spent on calls explaining code, debugging a missing semi-colon or resolving other syntactic errors. The code quality should still remain relatively high as Copilot is aware of the code-base as context so it makes attempts to follow coding standards set when making suggestions.
+On the whole, I believe that GitHub Copilot is something every developer could find benefits from and it's cost are jutifiable. All developer teams should atleast consider GitHub Copilot and unless you are developing a system to handle extreamly sensitive information the Business plan should cover your security needs. GitHub claim a 55% improvement in coding speeds when using Copilot, even if the reality was 10-15% this is a considerable improvement in efficiency for busy developers. This should result in productivity increases across a team of developers without sacrificing quality. Ultimately, it depends on a business' risk tolerance versus appetite for innovation as to wheather this is something they adopt, but with the right measures and risk-mitigations it's a tool not to be ignored.
 
-Inline makes it so much easier and convinient with context
-Ctrl+I
-/fix 
-Really good for pipeline creation, bicep, IaC etc
+### Further reading
+
+Here are some other articles I read during my research, which you may also find interesting:
+
+1. [5 Ways to Reduce GitHub Copilot Security and Legal Risks](https://fossa.com/blog/5-ways-to-reduce-github-copilot-security-and-legal-risks/)
+
+2. [GitHub Copilot security concerns](https://vlad-rad.medium.com/github-copilot-security-conserns-d4209f0d5c28)
+
+3. [Yes, GitHub's Copilot can Leak (Real) Secrets](https://blog.gitguardian.com/yes-github-copilot-can-leak-secrets/#:~:text=The%20study%20analyzed%20435%20code,of%20the%20programming%20language%20used.)
+
+4. [About Copilot Individual Plan](https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-individual)
+
+5. [GitHub Copilot Chat now generally available for organizations and individuals](https://github.blog/2023-12-29-github-copilot-chat-now-generally-available-for-organizations-and-individuals/)
+
+
+
