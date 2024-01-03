@@ -5,7 +5,7 @@ author: "Frankie Clipsham"
 ---
 
 ## Introduction
-In my last blog, I spoke about not knowing the capability of GitHub Copilot. I decided to change this by signing up for the 30-day free trial and I began my investigation. I set out to determine the effectiveness, accuracy and security of GitHub Copilot as a tool for programmers. The end goal is a consideration of whether the monthly subscription costs involved are justified.
+In my last blog, I spoke about not knowing the capability of GitHub Copilot. I decided to change this by signing up for the 30-day free trial and I began my investigation. I set out to determine the effectiveness, accuracy and security of GitHub Copilot as a tool for programmers. The end goal is a consideration of whether the monthly subscription costs involved are justified and the security measures are satisfactory.
 
 For context, GitHub Copilot is an AI-powered assistant specifically trained to assist with programming. It can be installed as an extension in your programming environment (IDE) of choice to give code completions, explanations or 
 suggest fixes. This investigation primarily used the Visual Studio Code IDE for reasons explained later.
@@ -15,7 +15,7 @@ Inline chat was the most useful way I found to interact with Copilot. It's trigg
 
 Copilot has a `/explain` feature that will use the context of the highlighted code and the user's prompt to succinctly detail a section of code. This could be particularly beneficial for junior programmers or anyone attempting to get to grips with a new code base to understand the code. Furthermore, programmers working with code not written in their primary language could make use of this feature to improve their confidence and help with the syntactical nuances. 
 
-The `/fix` command can be used on errors to help debug issues in the code. Copilot provided me multiple suggestions for fixes in YAML pipelines when I references the line causing the build failures. 
+The `/fix` command can be used on errors to help debug issues in the code. Copilot provided me multiple valid suggestions for fixes in YAML pipelines when I references the line causing the build failures. 
 
 There is also a `/doc` feature that can be used to document or add comments to old/unsupported code. This could be particularly useful for those who forget to write or dislike writing documentation.
 
@@ -93,7 +93,7 @@ It is **crucial** that I mention the security measures above are exclusive to th
 
 ![GitHub Copilot Pricing](https://raw.githubusercontent.com/frank-64/ToBeFrank/master/assets/images/github-copilot-pricing.png)
 
-## Visual Studio vs VS Code
+## Visual Studio versus VS Code
 
 As mentioned earlier, the investigation was conducted in Visual Studio Code, primarily. However, I did conduct some testing on the same code in Visual Studio Professional 2022 to perform some comparisons. 
 
@@ -113,17 +113,17 @@ These were a few of the drawbacks I discovered while using Visual Studio as oppo
 
 ## Conclusions
 
-Copilot was particularly useful when writing YAML for pipelines as the build and deployment steps are very specific to the project at hand. This is a time-consuming process and its prone to mistakes. On top of that, a pipeline run for a small project in Azure DevOps or GitHub Actions can take a few minutes to output a success/failure. As shown in the examples above Copilot provided accurate additions using the context of the file and quickly helped me to resolve issues causing pipeline failures. This reduced the amount of pipeline failures and idle time between pipeline runs.
+I found Copilot's suggestions and completions particularly useful when writing YAML for pipelines and Infrastructure-as-Code (IaC). Although, I only scratched the surface of Copilot's strengths and weaknesses during my 30 day free-trial. Good developers are inquisitive by nature so I'm certain many better applications are being discovered and documented.
 
-In my eyes, AI is not a threat to the jobs of Software Engineers. It's purely a tool that, when used correctly, can increase the efficiency of certain day-to-day tasks. There are many stages of the Software Development lifecycle which simply cannot be completed by AI (at the moment) and the main one is centred around client interaction. When AI can understand what the client/product owner wants, break this down into requirements and prioritise these requirements it will be a different story. 
+In my eyes, AI is not a threat to the jobs of Software Engineers. It's purely a tool that, when used correctly, can increase the efficiency of certain day-to-day tasks. There are many stages of the Software Development lifecycle which simply cannot be completed by AI (at the moment) and I think the main one is around client interaction. When AI can understand what the client/product owner wants, break this down into requirements and prioritise it will be a different story. 
 
-AI *today* resembles a headless chicken, moving quickly and sporadically without a clear direction. It's only when provided with precise context and well-structured prompts that it gains purpose and focus, similar to finding its lost head. It will not be long until this bridge is gapped, however.
+AI *today* resembles a headless chicken, moving quickly and sporadically without a clear direction. It's only when provided with precise context, good examples and well-structured prompts that it gains direction and purpose, similar to finding its lost head. It will not be long until this bridge is gapped, however.
 
-On the whole, I believe that GitHub Copilot is something every developer could find benefits from using and its cost is justifiable. All developer teams should consider GitHub Copilot and unless you are developing a system to handle state secrets the Business plan has you covered. GitHub claims a 55% improvement in coding speeds when using Copilot, even if the reality was 10-15% this is a considerable improvement in efficiency for busy developers. This should result in productivity increases across a team of developers without sacrificing quality. Ultimately, it depends on a business' risk tolerance versus appetite for innovation as to it's adoption, but with the right measures and risk-mitigations, it's a tool not to be ignored.
+On the whole, I believe that GitHub Copilot is something every developer could find benefits from using and its cost are justifiable. All developer teams should consider GitHub Copilot and unless you are working on a system to handle state secrets the Business plan has you covered. GitHub claims a 55% improvement in coding speeds when using Copilot, even if the reality was 10-15% this is a considerable improvement in efficiency for busy developers and higher overall team productivity. Ultimately, it depends on a business' risk tolerance versus appetite for innovation as to its adoption, but with the right measures and risk-mitigations, it's a tool not to be ignored.
 
 ## Further Reading and Demonstration
 
-During this investigation, most of the features were tested, however, while writing this article GitHub released more features and improvements.
+During this investigation, most of the features were tested, however, while writing this article GitHub made a release for Copilot.
 
 I highly recommend watching this GitHub demonstration [video](https://youtu.be/a2DDYMEPwbE?si=B-UY9uMTji0My3wd) as it shows Copilot in action and introduces the new changes such as the use of multi-models, codebase referencing and inline chat improvements.
 
