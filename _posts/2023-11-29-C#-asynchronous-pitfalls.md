@@ -1,4 +1,8 @@
-## A word of warning when working with asynchronous code.
+---
+title: "C# Asynchronous Pitfalls - A word of warning when working with asynchronous code."
+date: 2023-11-29
+author: "Frankie Clipsham"
+---
 ### The Issue
 
 - Arose during testing of hundreds of asset creations at once meaning lots of repository method calls.

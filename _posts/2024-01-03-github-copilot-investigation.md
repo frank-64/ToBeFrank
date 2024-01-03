@@ -1,6 +1,7 @@
 ---
-title: "Crash landing or a soaring success? - GitHub Copilot Investigation"
+title: "Crash landing or a soaring success? Investigating GitHub’s AI pair programming tool, Copilot."
 date: 2024-01-03
+author: "Frankie Clipsham"
 ---
 
 ## Introduction
