@@ -38,7 +38,7 @@ The completion below was accurate and welcome as it was the next code I was abou
 ![Python code completion](https://raw.githubusercontent.com/frank-64/ToBeFrank/master/assets/images/python%20code%20completion.png)
 
 #### 3. App settings definition assisted with code completion
- In this example, I was manually defining my app's settings in a pipeline and it managed to perfectly suggest the next three settings which I was about to type. It used the context from the first variable `DOCKER_REGISTRY_SERVER_PASSWORD` to determine the next settings required and then matched my variable format. This is a great example of the time-saving benefit of GitHub Copilot as the manual process is very mundane and time-consuming.
+ In this example, I was manually defining my app's settings in a pipeline and it managed to perfectly suggest the next three settings which I was about to type. It used the context from the first variable `DOCKER_REGISTRY_SERVER_PASSWORD` to determine the next settings required and then matched my variable format. This is a great example of the time-saving benefit of GitHub Copilot as the manual process is very mundane and specific.
 
 ![App settings code completion 1](https://raw.githubusercontent.com/frank-64/ToBeFrank/master/assets/images/app%20settings%202.png)
 ### Code Suggestions
@@ -62,7 +62,7 @@ During an update to some pipelines, I was curious why the documentation stated a
 ![Pipelines explain](https://raw.githubusercontent.com/frank-64/ToBeFrank/master/assets/images/pipelines%20explain.png)
 
 ### Chat GPT vs GitHub Copilot
-I decided to compare ChatGPT and GitHub Copilot by asking the same question: How do I set the admin user property on an Azure Container Registry in a Bicep template? ChatGPT was provided with the existing resource definition for context. In the images below ChatGPT was completely off from the documented approach by [Microsoft](https://learn.microsoft.com/en-us/azure/templates/microsoft.containerregistry/registries?pivots=deployment-language-bicep#:~:text=properties%3A%20%7B%0A%20%20%20%20adminUserEnabled%3A%20bool). It was attempting to use Role-based access control assignments, but Copilot suggested the correct addition and saved some time researching.
+I decided to compare ChatGPT and GitHub Copilot by asking the same question: *How do I set the admin user property on an Azure Container Registry in a Bicep template?* ChatGPT was provided with the existing resource definition for context. In the images below ChatGPT was completely off from the documented approach by [Microsoft](https://learn.microsoft.com/en-us/azure/templates/microsoft.containerregistry/registries?pivots=deployment-language-bicep#:~:text=properties%3A%20%7B%0A%20%20%20%20adminUserEnabled%3A%20bool). It was attempting to use Role-based access control assignments, but Copilot suggested the correct addition and saved some time researching.
 
 #### ChatGPT
 ![GPT Code suggestions](https://raw.githubusercontent.com/frank-64/ToBeFrank/aec2ec3606ee8a792e441795b38f41acda986559/assets/images/admin%20user%20chatgpt.png)
@@ -86,14 +86,14 @@ Here are just some measures GitHub are taking to ensure privacy and security **(
 
 You can read more on this here: [GitHub docs](https://resources.github.com/copilot-trust-center/)
 
-There are also concerns about secrets being leaked and displayed in some Copilot suggestions. The reason some suggestions contained secrets is because Copilot is trained from **public** GitHub repositories. If these secrets are contained in these public repositories then anyone can see them regardless. This should only be a concern if you are using hard-coded secrets, which is far from best practice, anyway. You should be using environmental variables or ideally managed secrets in something like Azure Key Vault.
+There are also concerns about secrets being leaked and displayed in some Copilot suggestions. The reason some suggestions contained secrets is because Copilot is trained from **public** GitHub repositories. If these secrets are contained in these public repositories then anyone can see them, regardless. This should only be a concern if you are using hard-coded secrets, which is far from best practice, anyway. You should be using environmental variables or ideally managed secrets in something like Azure Key Vault.
 
 ### Copilot for Business
 It is **crucial** that I mention the security measures above are exclusive to the Copilot Business plan and Enterprise plan (coming Feb 2024). As far as I'm aware this means that the free trial or Copilot Individual plan *may* train its model using your code-base and store prompts. GitHub claims that code stored in public GitHub repositories is currently used to train the model as mentioned [here](https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-individual#:~:text=GitHub%20Copilot%20is%20powered,data%20for%20that%20language.). So, for work on client projects the business plan at $19 per user/per month would be satisfactory to ensure code security.
 
 ![GitHub Copilot Pricing](https://raw.githubusercontent.com/frank-64/ToBeFrank/master/assets/images/github-copilot-pricing.png)
 
-## Visual Studio versus VS Code
+## Visual Studio versus Visual Studio Code
 
 As mentioned earlier, the investigation was conducted in Visual Studio Code, primarily. However, I did conduct some testing on the same code in Visual Studio Professional 2022 to perform some comparisons. 
 
@@ -115,7 +115,7 @@ These were a few of the drawbacks I discovered while using Visual Studio as oppo
 
 I found Copilot's suggestions and completions particularly useful when writing YAML for pipelines and Infrastructure-as-Code (IaC). Although, I only scratched the surface of Copilot's strengths and weaknesses during my 30 day free-trial. Good developers are inquisitive by nature so I'm certain many better applications are being discovered and documented.
 
-In my eyes, AI is not a threat to the jobs of Software Engineers. It's purely a tool that, when used correctly, can increase the efficiency of certain day-to-day tasks. There are many stages of the Software Development lifecycle which simply cannot be completed by AI (at the moment) and I think the main one is around client interaction. When AI can understand what the client/product owner wants, break this down into requirements and prioritise it will be a different story. 
+In my eyes, AI is not a threat to the jobs of Software Engineers. It's purely a tool that, when used correctly, can increase the efficiency of certain day-to-day tasks. There are many stages of the Software Development lifecycle which simply cannot be completed by AI (at the moment) and I think the main one is around client interaction. When AI can understand what the client/product owner wants, break this down into requirements and prioritise it, it will be a different story. 
 
 AI *today* resembles a headless chicken, moving quickly and sporadically without a clear direction. It comes into it's own when provided with precise context, good examples and well-thought-out prompts, gaining direction and purpose, similar to the chicken finding it's head. It will not be long until this bridge is gapped, however.
 
