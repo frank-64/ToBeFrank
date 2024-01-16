@@ -74,7 +74,7 @@ I decided to compare ChatGPT and GitHub Copilot by asking the same question: *Ho
 
 There's the obvious elephant in the room when we talk about AI and that is our data. When working with sensitive information or intellectual property it's a very valid concern to have considering Copilot uses the source code to generate completions and suggestions. 
 
-GitHub Copilot is being used in dev teams by huge enterprise companies from sectors such as banking, distribution, e-commerce and aviation. These companies have done their due diligence when it comes to security concerns and are satisfied with the level of security implemented for Copilot. For most companies, weak security and privacy is a deal breaker, so it seems this has been prioritised by GitHub during Copilot's development.
+GitHub Copilot is being used in dev teams by huge enterprise companies from sectors such as banking, distribution, e-commerce and aviation. These companies have done their due diligence when it comes to security concerns and are satisfied with the level of security implemented for Copilot. For most companies, weak security and privacy concerns are deal breakers, so it seems this has been prioritised by GitHub during Copilot's development.
 
 Here are just some measures GitHub are taking to ensure privacy and security **(Enterprise or Business plans only)**:
 
