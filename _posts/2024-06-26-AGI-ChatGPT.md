@@ -16,7 +16,12 @@ In my last blog post I concluded that AI is not a threat to the jobs of Software
 
 # What is Artificial General Intelligence (AGI)?
 
-The field of Artificial Intelligence (AI) has been around since the 60s [[A. Rockwell, 2017]](https://sitn.hms.harvard.edu/flash/2017/history-artificial-intelligence/) so the concept of measuring the intelligence of this AI is nothing new. One of the first tests to measure computer intelligence was from Alan Turing who proposed the 'Turing Test'. An AI would pass if it's responses to questions were indistinct from that of a human, regardless of their correctness.
+The field of Artificial Intelligence (AI) has been around since the 60s [[A. Rockwell, 2017]](https://sitn.hms.harvard.edu/flash/2017/history-artificial-intelligence/) so the concept of measuring the intelligence of this AI is nothing new. One of the first tests to measure computer intelligence was from Alan Turing who proposed the 'Turing Test'. An AI would pass if it's responses to questions were indistinct from that of a human, regardless of their correctness. It feels like we are here with the most advanced Large Language Models (LLM) such as GPT-4o, but this isn't the point. Many consider the Turing test to be insufficient in measuring intelligence as it doesn't account for any concept of a "mind" or "conciousness". This test only measures one aspect of intelligence that a narrow AI designed for natural language conversation, such as GPT-4o, would excel at.
+
+The real test of an AI is one th
+
+, but compared to 'human' intelligence there are many diciplines you must excel in to be considered intelligent.
+
 
 # AI in 2024 vs AGI vs Human Intelligence
 
