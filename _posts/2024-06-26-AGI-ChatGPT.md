@@ -10,11 +10,11 @@ Things to mention:
 
  -->
 
-# Introduction
+## Introduction
 
 In my last blog post I concluded that AI is not a threat to the jobs of Software Engineers (SWE). As a SWE this may seem biased, so I have decided to delve more deeply into this topic to discuss where AI is at the moment and why (_I believe_) we won't be replaced anytime soon. During this article I will touch on the concept of Artificial General Intelligence (AGI), what this means, how close we are to it and it's relevance to the future of Software Development. I'll also talking about the hype around AI and why, all too often, we're seeing these inflated capabilites and pipe dreams rather than candor and reality.
 
-# What is Artificial General Intelligence (AGI)?
+## What is Artificial General Intelligence (AGI)?
 
 The field of Artificial Intelligence (AI) has been around since the 60s [[Rockwell, A. 2017]](https://sitn.hms.harvard.edu/flash/2017/history-artificial-intelligence/) so the concept of measuring the intelligence of AI is nothing new. One of the first tests to measure computer intelligence was from Alan Turing who proposed the 'Turing Test'. An AI would pass if it's responses to questions were indistinct from that of a human, regardless of their correctness. It feels like we are here with the most advanced Large Language Models (LLM) such as GPT-4o, but this isn't the point. Many consider the Turing test to be insufficient in measuring intelligence as it doesn't account for any concept of a "mind" or "conciousness". This test only measures one aspect of intelligence that a narrow AI\*\* designed for natural language conversation, such as GPT-4o, is inherently good at.
 
@@ -28,7 +28,7 @@ These are just a small subset of the capabilities we, as humans, possess that en
 
 \*\*Narrow AI: A system that carries out specific "intelligent" behaviours in specific contexts [[Kurzweil, R. 2005]]()
 
-# Will we see AGI?
+## Will we see AGI?
 
 <!--
 - Elon Musk's claims
@@ -51,7 +51,7 @@ despite significant progress, many technical and ethical hurdles remain, and the
 
 Even if AGI was possible in theory there is still the practical reality that an AGI could be too expensive to train and deploy. The current latest models have over 100 billion parameters and take months to train on the latest GPUs. An AGI would have much higher compute requirements to that of the latest narrow AIs which could require huge advancements in hardware and model efficiency before becoming feasible for wide-spread use.
 
-# The Hype
+## The Hype
 
 <!--
   - The market incentives to make AI profitiable and desire to hype as much as possible. Sometimes further than it's capabilities.
@@ -69,7 +69,7 @@ Even if AGI was possible in theory there is still the practical reality that an 
 
 There are huge market incentives in AI and it's a buzzword that gets lots attention from investors and consumers alike. This has lead to explosions in profit and stock prices for microchip companies such as NVidia and Supermicro, due to huge compute requirements to train and run all these models, that are only getting bigger.
 
-# Devs Are Expensive, So Are Mistakes...
+## Devs Are Expensive, So Are Mistakes...
 
 <!--
 - Candid about how good AI actually is
@@ -82,14 +82,11 @@ I believe companies see AI as a way to slim down their work force and increase p
 There are some ethical concerns that arise when the output of AI is given so much importance. Who is responsible if the AI makes mistakes? The person who guided the AI? The company who developed the AI? The company that adopted AI into their development process? Bugs in software can be very costly, especially in mission critical systems. It's very risky putting your companies repuation in the hands of an AI that has the potential to [hallucinate](https://www.ibm.com/topics/ai-hallucinations) or confidently produce erroneous responses.
 
 
-
-
-
-# Back To Reality
+## Back To Reality
 
 <!--
 - I honestly think AI is great, I think it will be the biggest disruptor since the internet and has huge potential
 - Save t
  -->
 
-# Sources
+## Sources
