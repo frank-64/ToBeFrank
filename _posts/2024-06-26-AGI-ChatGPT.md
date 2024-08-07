@@ -12,7 +12,7 @@ Things to mention:
 
 ## Introduction
 
-In my last blog post I concluded that AI is not a threat to the jobs of Software Engineers (SWE). As a SWE this may seem biased, so I have decided to delve more deeply into this topic to discuss where AI is at the moment and why (_I believe_) we won't be replaced anytime soon. During this article I will touch on the concept of Artificial General Intelligence (AGI), what this means, how close we are to it and it's relevance to the future of Software Development. I'll also talking about the hype around AI and why, all too often, we're seeing these inflated capabilites and pipe dreams rather than candor and reality.
+In my last blog post I concluded that AI is not a threat to the jobs of Software Engineers (SWE). As a SWE this may seem biased, so I have decided to delve more deeply into this topic to discuss where AI is at the moment and why (_I believe_) AI won't take your job anytime soon . During this article I will touch on the concept of Artificial General Intelligence (AGI), what this means, how close we are to it and it's relevance to the future of Software Development. I'll also talking about the hype around AI and why, all too often, we're seeing these inflated capabilites and pipe dreams rather than candor and reality.
 
 ## What is Artificial General Intelligence (AGI)?
 
@@ -41,15 +41,15 @@ These are just a small subset of the capabilities we, as humans, possess that en
 - Compute and energy
  -->
 
-As mentioned, AGI is a hot topic rife with hype and speculation from those seeking to profit and academics diligently exploring its possibilities and implications.
+As mentioned, AGI is a hot topic rife with hype and speculation. 
 Elon Musk claims that we will see AGI next year and some form of Artificial Super Intelligence (ASI) by 2029.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">AI will probably be smarter than any single human next year. By 2029, AI is probably smarter than all humans combined. <a href="https://t.co/RO3g2OCk9x">https://t.co/RO3g2OCk9x</a></p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1767738797276451090?ref_src=twsrc%5Etfw">March 13, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I think these are wildly optimistic claims given the current state of artificial intelligence research and development;
-despite significant progress, many technical and ethical hurdles remain, and the substitution of Software Developers by AI will only become feasible come AGI, which I think we're much further from than some predict.
+despite significant progress, many technical and ethical hurdles remain, and the substitution of Software Developers by AI will only become feasible come AGI, which I think we're very far away from.
 
-Even if AGI was possible in theory there is still the practical reality that an AGI could be too expensive to train and deploy. The current latest models have over 100 billion parameters and take months to train on the latest GPUs. An AGI would have much higher compute requirements to that of the latest narrow AIs which could require huge advancements in hardware and model efficiency before becoming feasible for wide-spread use.
+Even if AGI was possible in theory there is still the practical reality that an AGI could be too expensive to train and deploy. The current latest models have over 100 billion parameters and take months to train on the latest GPUs. An AGI would have significantly higher compute requirements to that of the latest narrow AIs which would require huge advancements in hardware and model efficiency before becoming feasible for wide-spread use.
 
 ## The Hype
 
@@ -64,10 +64,9 @@ Even if AGI was possible in theory there is still the practical reality that an 
   - Investors love the AI buzzword
   - Hire less workers
    -->
-
 'AI' has been the talk of the tech since it's potential was widely realised with the release of GPT 3.5 and ChatGPT in November 2022. During this initial hype we saw many companies scramble to implement their own AI offerings. This lead to some companies demonstrating their implementation of AI with best case examples in favorable environments and even faking capabilities. This practice has been coined 'AI Washing' where companies are overhyping their AI further than their capabilities to attract investment and mislead consumers. We've seen this from demos such as [Devin AI](https://youtu.be/tNmgmwEtoWE) and [Google's Gemini](https://www.theregister.com/2023/12/11/ai_in_brief/).
 
-There are huge market incentives in AI and it's a buzzword that gets lots attention from investors and consumers alike. This has lead to explosions in profit and stock prices for microchip companies such as NVidia and Supermicro, due to huge compute requirements to train and run all these models, that are only getting bigger.
+There are huge market incentives in AI and it's a buzzword that gets lots attention from investors and consumers alike. This has lead to explosions in profit and stock prices for microchip companies such as NVidia and Supermicro, due to huge compute requirements to train and deploy/run all these models, that are only getting bigger. On the other hand are the research academics and lawmakers exploring the possibilities and implications to ensure the safeguarding of humans.
 
 ## Devs Are Expensive, So Are Mistakes...
 
@@ -79,14 +78,24 @@ There are huge market incentives in AI and it's a buzzword that gets lots attent
   -->
 I believe companies see AI as a way to slim down their work force and increase profits as with most companies payroll is the highest expense. If an AGI was widely available, adoption in Software would most likely start with junior developers being let go and seniors guiding the AI. To me this raises issues down the line as without a pipeline of junior developers gaining experience the pool of senior developers would shrink, leading to a skills gap and lack of innovation. This could end in disasterous spiral if their was an over-dependence on AI while problem-solving and critical thinking skills atrophy amoung human developers.
 
-There are some ethical concerns that arise when the output of AI is given so much importance. Who is responsible if the AI makes mistakes? The person who guided the AI? The company who developed the AI? The company that adopted AI into their development process? Bugs in software can be very costly, especially in mission critical systems. It's very risky putting your companies repuation in the hands of an AI that has the potential to [hallucinate](https://www.ibm.com/topics/ai-hallucinations) or confidently produce erroneous responses.
+Bugs in software can be very costly, especially in mission critical systems. Take the recent CrowdStrike Falcon update that caused huge global impact when over 8 million Windows machines experienced the blue screen of death. 
+Although this was a result of a logic error introduced by the update, the main problem, for me, lies with process, not the developer. There needs to be much more robust QA, canary testing/phased rollout and better overall update management for a change that gets deployed directly to millions of Windows machines and runs as low-level as the device kernel drivers. AI cannot resolve these issues, they need to be defined by 
 
+There are some ethical concerns that arise when the output of AI is given so much importance. Who is responsible if the AI makes mistakes? The person prompting the AI? The company who developed the AI? The company that adopted AI into their development process? It's very risky putting your companies repuation in the hands of an AI that has the potential to [hallucinate](https://www.ibm.com/topics/ai-hallucinations) or confidently produce erroneous responses.
+
+In a case from earlier this year a ChatBot on Air Canada's website offered a ticket discount to a customer due to a bereavement. This was not actually in their policy. The customer sued Air Canada and the court ruled that Air Canada were responsible of "ensuring it's ChatBot was accurate". This case sets a precedent that the company deploying an implementation of AI is liable for any hallucinations it outputs.
+
+We're only going to see more cases like this as AI adoption increases. Hence, there should always be serious consideration of the potential impact incorrect responses would result in, especially if the implementation is publically facing.
 
 ## Back To Reality
 
 <!--
 - I honestly think AI is great, I think it will be the biggest disruptor since the internet and has huge potential
 - Save t
+- Race to AGI
+- Can't forget the impact on humans and ethical issues
+- The hype is going nowhere
  -->
 
+Honestly, I think AI is great, it's going to be the most influencial piece of technology since the internet and there is huge potential. The hype is going nowhere, with each release of a new model or implementation using 
 ## Sources
