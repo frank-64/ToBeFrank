@@ -78,8 +78,8 @@ There are huge market incentives in AI and it's a buzzword that gets lots attent
   -->
 I believe companies see AI as a way to slim down their work force and increase profits as with most companies payroll is the highest expense. If an AGI was widely available, adoption in Software would most likely start with junior developers being let go and seniors guiding the AI. To me this raises issues down the line as without a pipeline of junior developers gaining experience the pool of senior developers would shrink, leading to a skills gap and lack of innovation. This could end in disasterous spiral if their was an over-dependence on AI while problem-solving and critical thinking skills atrophy amoung human developers.
 
-Bugs in software can be very costly, especially in mission critical systems. Take the recent CrowdStrike Falcon update that caused huge global impact when over 8 million Windows machines experienced the blue screen of death. 
-Although this was a result of a logic error introduced by the update, the main problem, for me, lies with process, not the developer. There needs to be much more robust QA, canary testing/phased rollout and better overall update management for a change that gets deployed directly to millions of Windows machines and runs as low-level as the device kernel drivers. AI cannot resolve these issues, they need to be defined by 
+Bugs in software can be very costly, especially in low-level or mission critical systems. Take the recent CrowdStrike Falcon update that caused huge global impact when over 8 million Windows machines experienced the blue screen of death. 
+Although this was a result of a logic error introduced by the update, the main problem, for me, lies with process, not the developer. There needs to be much more robust QA, staged rollouts and disaster recovery plans for a change that gets deployed directly to millions of Windows machines and runs as low-level as the kernel device drivers. The processes should be defined at the organisational or departmental level with experienced guidance to ensure reliability and safety for the user. These are are human decisions that should not be decided by AI as there is huge reputational impact at risk. 
 
 There are some ethical concerns that arise when the output of AI is given so much importance. Who is responsible if the AI makes mistakes? The person prompting the AI? The company who developed the AI? The company that adopted AI into their development process? It's very risky putting your companies repuation in the hands of an AI that has the potential to [hallucinate](https://www.ibm.com/topics/ai-hallucinations) or confidently produce erroneous responses.
 
@@ -98,4 +98,8 @@ We're only going to see more cases like this as AI adoption increases. Hence, th
  -->
 
 Honestly, I think AI is great, it's going to be the most influencial piece of technology since the internet and there is huge potential. The hype is going nowhere, with each release of a new model or implementation using 
+
+- Race to AGI
+- Lots of claims of AGI before we reach it
+- Can't forget the impact on humans and ethical issues
 ## Sources
