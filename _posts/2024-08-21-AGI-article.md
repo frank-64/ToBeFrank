@@ -66,7 +66,8 @@ Other research suggests developers using AI are producing worse code than withou
 
 ## Conclusion
 
-Honestly, I think AI is great, it's going to be the most influential piece of technology since the internet and there is huge potential, but it's not the silver bullet nor is it taking Software jobs anytime soon, it's creating them, if any. Personally, I've found real benefits from using AI to improve my day-to-day efficiency at work as shown in my last blog on GitHub Copilot. It's disrupting many industries, and the competition among AI companies is fuelling innovation, enabling cutting-edge technology right at our fingertips. 
+Honestly, I think AI is great, it's going to be the most influential piece of technology since the internet. However, it's not a silver bullet, nor is it going to take software jobs anytime soon—if anything, it's creating them.
+Personally, I've found real benefits from using AI to improve my day-to-day efficiency at work as shown in my last blog on GitHub Copilot. It's disrupting many industries, and the competition among AI companies is fuelling innovation, enabling cutting-edge technology right at our fingertips. 
 
 It's an exciting time to be in the tech industry, but hype is going nowhere, with each release of a new model or implementation only fuelling further excitement. So, all I'll suggest is taking a pinch (_bucket_) of salt with each new demo from the latest AI startup as the product may be much less capable than they insist.
 
