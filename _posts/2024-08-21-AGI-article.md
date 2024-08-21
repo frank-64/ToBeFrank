@@ -5,7 +5,7 @@ author: "Frankie Clipsham"
 ---
 
 ## Introduction
-On today's episode of are you smarter than a Large Language Model (LLM) we have **you** versus OpenAI's cutting edge GPT 4! Do you think you have what it takes to beat the 200+ billion parameter LLM that has a training data set the size of the internet?
+On today's episode of are you smarter than a Large Language Model (LLM) we have **you** versus OpenAI's cutting edge GPT 4! Do you think you have what it takes to beat the 200+ billion parameter LLM that has been trained on the internet?
 
 ![AI smarter](https://raw.githubusercontent.com/frank-64/ToBeFrank/master/assets/images/ai-smarter.jpg)
 
