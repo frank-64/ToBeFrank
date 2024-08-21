@@ -62,7 +62,7 @@ In a case from earlier this year a ChatBot on Air Canada's website offered a tic
 
 We're only going to see more cases like this as AI adoption increases. Hence, there should always be serious consideration of the potential impact incorrect responses would result in, especially if the implementation is publicly facing.
 
-There's other research to suggest developers using AI are producing worse code that without as shown in the number of comments on pull requests for the same quantity of changes. This might be a topic for another blog, but it's worth considering: if AI struggles to succeed in the core areas where it can make an impact (coding), then Artificially Intelligent Software Engineers aren't coming anytime soon since coding is only one aspect of a Software Engineer's role.
+Other research suggests developers using AI are producing worse code than without AI as shown in the number of comments on pull requests for the same quantity of changes. This might be a topic for another blog, but it's worth considering: if AI struggles to succeed in the core areas where it can make an impact (coding), then Artificially Intelligent Software Engineers aren't coming anytime soon since coding is only one aspect of a Software Engineer's role.
 
 ## Conclusion
 
