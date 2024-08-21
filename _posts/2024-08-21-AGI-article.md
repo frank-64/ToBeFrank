@@ -70,7 +70,7 @@ Honestly, I think AI is great, it's going to be the most influential piece of te
 
 ![Never celebrate too early](https://raw.githubusercontent.com/frank-64/ToBeFrank/master/assets/gif/winner_05.gif)
 
-The race toward AGI has also begun, but the starting gun has barely sounded, and it's more of a marathon than a sprint. There are still some huge technical and ethical hurdles to overcome before are close to the finish line, but I think we'll see many, especially those with a financial incentive like Elon, celebrating too early and claiming it's a reality.
+The race toward AGI has also begun, but the starting gun has barely sounded, and it's more of a marathon than a sprint. There are still some huge technical and ethical hurdles to overcome before we are even close to the finish line, but I think we'll see many, especially those with a financial incentive like Elon, celebrating too early and claiming it's a reality.
 
 ## Sources
 1. _[The History of Artificial Intelligence](https://sitn.hms.harvard.edu/flash/2017/history-artificial-intelligence/) - Rockwell, A. 2017_
