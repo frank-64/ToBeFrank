@@ -1,15 +1,17 @@
 ---
 title: "Is AI smarter than you?"
-date: 2024-06-26
+date: 2024-08-21
 author: "Frankie Clipsham"
 ---
 
 ## Introduction
-Do you think you're smarter than AI? 
+On today's episode of are you smarter than a Large Language Model (LLM) we have **you** versus OpenAI's cutting edge GPT 4! Do you think you have what it takes to beat the 200+ billion parameter LLM that has a training data set the size of the internet?
 
 ![AI smarter](https://raw.githubusercontent.com/frank-64/ToBeFrank/master/assets/images/ai-smarter.jpg)
 
-In my last blog post I concluded that AI is not a threat to the jobs of Software Engineers (SWE). As a SWE this may seem biased, so I have decided to delve more deeply into this topic to discuss where AI is now and why (_I believe_) AI won't take your job anytime soon. During this article I will touch on the concept of Artificial General Intelligence (AGI), what this means, how close we are to it and its relevance to the future of Software Development. I'll also talking about the hype around AI and why, all too often, we're seeing these inflated capabilities and pipe dreams rather than candour and reality.
+I'm going to tell you why you have a much better chance than you may think and while these models have vast amounts of data and knowledge at their disposal they lack characteristics uniquely human that no algorithm can mimic.
+
+During my last blog post I concluded that AI is not a threat to the jobs of Software Engineers (SWE). As a SWE this may seem biased, so I have decided to delve more deeply into this topic to discuss where AI is now and why (_I believe_) AI won't take your job anytime soon. During this article I will touch on the concept of Artificial General Intelligence (AGI), what this means, how close we are to it and its relevance to the future of Software Development. I'll also talking about the hype around AI and why, all too often, we're seeing these inflated capabilities and pipe dreams rather than candour and reality.
 
 ## What is Artificial General Intelligence (AGI)?
 
