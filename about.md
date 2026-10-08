@@ -8,7 +8,7 @@ Hi, I'm Frankie!
 
 Welcome to my blog, this is a place for me to share recent projects, words of warning, useful tech tools and other exciting things.
 
-This blog aims to record any interesting discoveries throughout my career as a Software Developer through work and personal projects.
+This blog aims to record any interesting discoveries throughout my tech career through work and personal projects.
 
 Please make sure to check out my [GitHub](https://github.com/frank-64) and my [CV](https://frank-64.github.io/FrankieClipshamCV/).
 
